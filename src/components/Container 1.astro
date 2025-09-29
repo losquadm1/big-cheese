@@ -1,0 +1,25 @@
+---
+
+---
+
+<div class = "container1">
+    <div class = "col">
+        <slot name ="left" />
+    </div>
+<div class="col">
+    <slot name="right" />
+</div>
+
+<style>
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+    .col {
+        border: 1px solid var(--color-text); 
+        padding: 1rem;
+    }
+
+</style>
