@@ -2,7 +2,7 @@
 
 ---
 
-<div class = "container1">
+<div class = "bigpic">
     <div class = "col">
         <slot name ="left" />
     </div>
@@ -11,11 +11,15 @@
 </div>
 
 <style>
-.container {
+.bigpic {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-}
+    align-self: center;
+    justify-content: center;
+    align-content: center
+    
+  }
 
     .col {
         border: 1px solid var(--color-text); 

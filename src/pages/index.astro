@@ -9,10 +9,54 @@ import { Image } from "astro:assets";
 
 <Layout title="Astro Starter">
   <Container>
-    <Image src={AstroLogo} alt="" />
-    <h1>a simple Astro Starter Kit</h1>
-    <SampleComponent text="This is a sample component!" />
-    <SampleMarkdown />
+    <h1>Since the dawn of man...</h1>
+    <h1>There has been one question that has persisted above all else...</h1>
+    <h1>logo</h1>
   </Container>
-</Layout>
+  
+  <div class="bigpic">
+    <p>fat dookie</p>
+    <h1>test</h1>
+  </div>
 
+<div class="textpic">
+    <p>Starting off with Man’s Best Friend: The Dog. Dogs are known for loving one thing above all else. Sticking their head out the window. With this in mind there is only one option I view as optimal… <strong>The Motorcycle</strong>, the motorcycle would allow these dogs to be as free as they want while being perfect for the size of your above average mutt.</p>
+    <h1>picture</h1>
+</div>
+
+<div class ="text">
+  <p>But then this begs the question. What of our smaller pals? Pugs, chihuahuas, pomeranians, dachshunds. What would they ride? Well to me, the answer is quite simple…
+</p>
+</div>
+</Layout>
+<style>
+
+.bigpic {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+    Padding-bottom:20px;
+  }
+
+  .textpic {
+    padding:10px 10px 20px 20px;
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .text {
+    padding:20px;
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    justify-content: left;
+    align-content: center;
+  }
+  </style>
