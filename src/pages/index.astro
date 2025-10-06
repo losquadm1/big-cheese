@@ -14,7 +14,7 @@ import { Image } from "astro:assets";
     <h1>logo</h1>
   </div>
 
-  <section class="bigpic">
+  <section class="bigpic1">
       <div class ="bigpic-text">
     <p>fat dookie</p>
       </div>
@@ -23,7 +23,7 @@ import { Image } from "astro:assets";
 
 <section class="textpic">
       <div class="textpic-text">
-  <p>Starting off with Man’s Best Friend: The Dog. Dogs are known for loving one thing above all else. Sticking their head out the window. With this in mind there is only one option I view as optimal… <strong>The Motorcycle</strong>, the motorcycle would allow these dogs to be as free as they want while being perfect for the size of your above average mutt.</p>
+  <p>Starting off with Man’s Best Friend: The Dog. Dogs are known for loving one thing above all else: sticking their head out the window. With this in mind there is only one option I view as optimal… <strong>The Motorcycle</strong>, the motorcycle would allow these dogs to be as free as they want while being perfect for the size of your above average mutt.</p>
       </div>
     <img src="the goat.jpg" alt="VespaPug">
   </section>
@@ -40,7 +40,48 @@ import { Image } from "astro:assets";
   <img src="the goat.jpg" alt="VespaPug">
 </section>
 
+<section class="bigpic">
+      <div class ="bigpic-text">
+    <p>CATS</p>
+      </div>
+    <img src="catcover.jpg" alt="Cat Driving">
+  </section>
+
+  <section class="textpic-r">
+      <div class="textpic-text">
+  <p>Up next on the list, is the cat. These anti-social weirdos would 1000% drive <strong>Two Seaters</strong>. I believe this is the case for a few reasons.<br>
+First and foremost: cats would drive cars, no doubt about it, they wouldn’t want to bother with the wreckless lifestyle of the dog. Instead, they’d prefer to sit in silence.</p>
+      </div> 
+      <img src="the goat.jpg" alt="VespaPug">
+  </section>
+      
+      <section class="textpic">
+      <div class="textpic-text">
+  <p>The second, and more important reason, is their own self absorbed nature, they wouldn’t want to share their car with more than one person at a time (if that). Meaning that the two seater is the perfect match for these hairballs.</p>
+      </div>
+    <img src="the goat.jpg" alt="VespaPug">
+  </section>
+
+<section class="bigpic">
+      <div class ="bigpic-text">
+    <p>BEARS</p>
+      </div>
+    <img src="bearvan.jpg" alt="Bear Driving">
+  </section>
+
+  <section class="textpic-r">
+      <div class="textpic-text">
+  <p>The third and most simple one on our list: Bears. Bears are big, so they need a big vehicle. They would drive trucks.</p>
+      </div> 
+      <img src="the goat.jpg" alt="VespaPug">
+  </section>
+
+<div class="s-footer">
+  <p>footer</p>
+</div>
+
 </Layout>
+
 <style>
 
    .intro {
@@ -53,15 +94,29 @@ import { Image } from "astro:assets";
     text-align: center;
     align-self: center;
     justify-content: space-around;
-
+    background-color: black;
+    color: white;
   }
+    .intro h1{
+      color: white
+    }
+
+.bigpic1{
+    left:0;  
+    width: 100vw;
+    object-fit: cover;
+    height: 140px;
+    padding-top: 50px;
+    padding-bottom: 225px;
+}
 
 .bigpic{
     left:0;  
     width: 100vw;
     object-fit: cover;
-
     height: 140px;
+    padding-top: 150px;
+    padding-bottom: 225px;
 }
 
 .bigpic-text{
@@ -70,7 +125,14 @@ import { Image } from "astro:assets";
     align-content: center;
     position:relative;
     z-index: 100;
+    align-self: center;
+    justify-content: center;
 }  
+
+.bigpic-text p{
+  background-color: white;
+  padding: 10px 20px 10px 20px
+}
 
 .bigpic img{
     display: flex;
@@ -80,12 +142,23 @@ import { Image } from "astro:assets";
     object-fit: cover;
     position: absolute;
     width: 100vw;
-    height: 200px;
+    height: 300px;
+    padding-bottom: 20px
   }
 
+.bigpic1 img{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
+    position: absolute;
+    width: 100vw;
+    height: 300px;
+    padding-bottom: 20px
+  }
 
   .textpic {
-    max-width: 60vw;
     padding:10px;
     display: flex;
     flex-direction: row;
@@ -96,6 +169,17 @@ import { Image } from "astro:assets";
     place-self: center
   }
 
+   .s-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    align-self: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+  }
 
   .text {
      padding: 30px;
@@ -127,7 +211,6 @@ import { Image } from "astro:assets";
   }
 
   .textpic-r {
-    max-width: 60vw;
     padding:10px;
     display: flex;
     flex-direction: row;
@@ -170,4 +253,6 @@ import { Image } from "astro:assets";
     max-height: 30vw
   }
   
+ 
+
   </style>
