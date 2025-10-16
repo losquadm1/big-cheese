@@ -6,13 +6,14 @@ import AstroLogo from "@assets/images/astro-logo-light-gradient.png";
 import { Content as SampleMarkdown } from "@content/sample-markdown.md";
 import { Image } from "astro:assets";
 import 'aos/dist/aos.css';
+import ButtonDog from "../components/ButtonDog.astro";
 ---
 
 <Layout title="Astro Starter">
   <div class="intro">
-    <h1 data-aos="fade-in">Since the dawn of man...</h1>
+    <p data-aos="fade-in">Since the dawn of man...</p>
     </div><div class="intro">
-    <h1 data-aos="fade-down"> There has been one question that has persisted above all else...</h1>
+    <p data-aos="fade-down"> There has been one question that has persisted above all else...</p>
     </div>
   <div class="intro2">
       <img src="pug in vespa 1 (3) copy.webp" alt="The Goat" data-aos="fade-in" data-aos-delay="500"> 
@@ -81,7 +82,8 @@ First and foremost: cats would drive cars, no doubt about it, they wouldn’t wa
   </section>
 
 <section class="s-footer">
-  <p>footer</p>
+  <p>Cool and Awesome Footer</p>
+  <ButtonDog></ButtonDog>
 </section>
  
 </Layout>
@@ -89,6 +91,7 @@ First and foremost: cats would drive cars, no doubt about it, they wouldn’t wa
 
 
 <style>
+
   html {
     box-sizing: border-box;
   }
@@ -115,8 +118,10 @@ First and foremost: cats would drive cars, no doubt about it, they wouldn’t wa
     color: white;
   }
 
-    .intro h1{
-      color: white
+    .intro p{
+      color: white;
+      font-size: 500%;
+      font-style: normal;
     }
 
      .intro2 {
@@ -167,7 +172,9 @@ First and foremost: cats would drive cars, no doubt about it, they wouldn’t wa
 
 .bigpic-text p{
   background-color: white;
-  padding: 10px 20px 10px 20px
+  background-opacity: 20%;
+  padding: 10px 20px 10px 20px;
+  font-size: 400%
 }
 
 
@@ -209,16 +216,22 @@ First and foremost: cats would drive cars, no doubt about it, they wouldn’t wa
     place-self: center
   }
 
+  .textpic p{
+    font-family: noto-sans-tc, sans-serif;
+    font-size: 125%
+  }
+
    .s-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 0.5rem;
     text-align: center;
     align-self: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: black;
     color: white;
+    padding: 10px;
   }
 
   .text {
@@ -233,6 +246,8 @@ First and foremost: cats would drive cars, no doubt about it, they wouldn’t wa
 
   .text p{
     justify-content: flex-start;
+    font-family: noto-sans-tc, sans-serif;
+    font-size: 125%
   }
 
     .textpic img{
@@ -268,6 +283,11 @@ First and foremost: cats would drive cars, no doubt about it, they wouldn’t wa
     flex-wrap: wrap;
     max-height: 25vh;
     object-fit: cover;
+  }
+
+  .textpic-r p{
+    font-family: noto-sans-tc, sans-serif;
+    font-size: 125%
   }
 
 
